@@ -11,6 +11,7 @@
     </header>
     <main>
         <section>
+
             <h3>Formatted Text</h3>
 
             <p>
@@ -299,6 +300,56 @@
                     </tr>
                 </tbody>
             </table>
+        </section>
+        
+        <section>
+
+            <h3>Voting form</h3>
+
+            <form method="post">
+                <label for="firstName">First Name:</label>
+                <input 
+                    type="text" 
+                    id="firstName" 
+                    name="firstName" 
+                    placeholder="Your First name"
+                    minlength="2"
+                    maxlength="20"
+                    required/>
+                    <br/>
+                    <br/>
+                
+                <label for="lastName">Last Name:</label>
+                <input 
+                    type="text" 
+                    id="lastName" 
+                    name="lastName" 
+                    placeholder="Your Last name"
+                    minlength="2"
+                    maxlength="20"
+                    required/>
+                    <br/>
+                    <br/>
+                
+                <label for="groupName">Group Name:</label>
+                <input 
+                    type="text" 
+                    id="groupName" 
+                    name="groupName"
+                    placeholder="For example: КІУКІ-21-4"
+                    required/>
+                    <br/>
+                    <br/>
+                
+                    <label for="agree">Are you agree with latest changes?</label>
+                    <input type="radio" id="agree" name="agreement" value="Yes">Yes
+                    <input type="radio" id="disagree" name="agreement" value="No">No
+                    <br/>
+                    <br/>
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Form">
+            </form>
         </section>
     </main>
 </body>
